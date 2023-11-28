@@ -21,7 +21,8 @@ namespace EcommerceApp
         {
             app.UseRouting();
             app.UseEndpoints(endpoints =>
-                {
+                { 
+
                     endpoints.MapGet("/", async context =>
                      {
                        await  context.Response.WriteAsync("Welcome to Emcommerce");
